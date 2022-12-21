@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>Choose Your Own Adventure Story!</title>
+		<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+	  <link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+	
+		<div id="first-section1">
+			<h1 id="intro-text">CHOOSE YOUR OWN ADVENTURE</h1>
+			<h4 id="intro-text">An Interactive Story</h4>
+		</div>
+		
+		<div id="first-section2">
+			<h5 id="intro-text"><b>Click the button to begin</b></h5>
+			<button class="btn-large waves-effect waves-light" onClick="Start()">Start</button>
+		</div>
+	
+		<!--Part 1-->
+		<div class="scale-transition scale-out" id="part1">
+			<div class="center-align container">
+				<img src="https://wallpaper.dog/large/10999012.png" id="pictures">
+				<p id="story-text" class="flow-text">You wake up in an unknown island. You don't know how you got there, but you see trees all around you. </p>	
+				<p id="story-text" class="flow-text">The sun is bright and shining, but you feel a sense of danger when night will come later.</p>
+			
+				<button class="btn-large waves-effect waves-light" id="Gather_btn" onClick="Gather()">GATHER RESOURCES</button>
+				<button class="btn-large waves-effect waves-light" id="Explore_btn" onClick="Explore()">EXPLORE AROUND</button>
+			</div>
+		</div>
+	
+		<!--Part 2-->
+		<div class="scale-transition scale-out" id="part2">
+			<div class="center-align container">
+				<img src="https://i0.wp.com/codakid.com/wp-content/uploads/2020/12/minecraft_walled.jpg" id="pictures">
+				<p id="story-text" class="flow-text">You decide to go the nearest tree and get some wood. 
+	You punch the tree and gather supplies to create tools and get minerals.</p>	
+				<p id="story-text" class="flow-text">You got better tools and started farming for food by growing crops and plants.</p>
+			
+	
+				<button class="btn-large waves-effect waves-light" id="Build_btn" onClick="Build()">Build a House</button>
+				<button class="btn-large waves-effect waves-light" id="Face_btn" onClick="Face()">Face the Night</button>
+			</div>
+		</div>
+
+		<!--Part 3-->
+
+				<div class="scale-transition scale-out" id="part3">
+			<div class="center-align container">
+				<img src="https://c4.wallpaperflare.com/wallpaper/343/325/298/minecraft-video-games-farm-house-wallpaper-preview.jpg" id="pictures">
+				<p id="story-text" class="flow-text">You decide to climb the huge mountain and look around the area.</p>	
+				<p id="story-text" class="flow-text">In the distance, you spot a big house near the forest.</p>
+				
+				<button class="btn-large waves-effect waves-light" id="Visit_btn" onClick="Visit()">VISIT THE HOUSE</button>
+				<button class="btn-large waves-effect waves-light" id="Leave_btn" onClick="Leave()">LEAVE THEM ALONE</button>
+			</div>
+		</div>
+
+		<!--Win 1-->
+
+		<div class="scale-transition scale-out" id="win1">
+			<div class="center-align container">
+				<img src="https://lh3.googleusercontent.com/TAC-__AI1760x3F2-mskZ2P7sfhDsVdNoSrdIOWlTbArF2rmFYQGV2WrxkHPncTKjVHwbrsofo6DLhpPP_JYx8ti_zvdKkSRoz2sgrG9Kqz9O0LtSKLm-JN6lcDyV-dcB6hX1Bo" id="pictures">
+				<p id="story-text" class="flow-text">You have managed to create yourself your own house! It has furniture, food, shelter, and most importantly, a soft, comfy bed.</p>	
+				<p id="story-text" class="flow-text">You slept through the night and woke up safe and sound!</p>
+			
+				<button class="btn-large waves-effect waves-light" onClick="window.location.href='index.html'">PLAY AGAIN!</button>
+			</div>
+		</div>
+
+		<!--Lose 1-->
+
+		<div class="scale-transition scale-out" id="lose1">
+			<div class="center-align container">
+				<img src="https://i.imgur.com/RG6vOKR.png" id="pictures">
+				<p id="story-text" class="flow-text">You decide to arm yourself up and fight the creatures of the night on your own. As you defeat each enemy, you grow more and more tired each time.</p>	
+				<p id="story-text" class="flow-text">Your weapons break and you are left defenseless! Time to run!</p>
+			
+	
+				<button class="btn-large waves-effect waves-light" onClick="window.location.href='index.html'">PLAY AGAIN!</button>
+			</div>
+		</div>
+
+		<!--Win 2-->
+		<div class="scale-transition scale-out" id="win2">
+			<div class="center-align container">
+				<img src="https://wallpaperaccess.com/full/1193164.jpg" id="pictures">
+				
+				<p id="story-text" class="flow-text">You approach the house and knock on their door. The home owner greets you and welcomes you in.</p>	
+				<p id="story-text" class="flow-text">He's an adventurer just like you! He gave you food and a place to sleep for the night. New friend acquired!</p>
+			
+	
+				<button class="btn-large waves-effect waves-light" onClick="window.location.href='index.html'">PLAY AGAIN!</button>
+			</div>
+		</div>
+
+		<!--Lose 2-->
+		<div class="scale-transition scale-out" id="lose2">
+			<div class="center-align container">
+				<img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/minecraft/4/42/The_Hole.png?width=1280" id="pictures">
+				
+				<p id="story-text" class="flow-text">You decide to stay away from the house, it might be too suspicious! </p>	
+				<p id="story-text" class="flow-text">As you wander around, night has already come and there are enemies all around! You then dug a hole and hide for the night. Not a bad home, I guess?</p>
+			
+	
+				<button class="btn-large waves-effect waves-light" onClick="window.location.href='index.html'">PLAY AGAIN!</button>
+			</div>
+		</div>
+		
+	  <script src="script.js"></script> 
+	
+	</body>
+
+</html>
